@@ -11,52 +11,65 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Voici ma <a href="https://www.deezer.com/fr/playlist/11208978444">Propagande</a> musicale
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Cliquez sur un des genres ci-dessous pour commencer
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+      <div className={styles.grid}>
+          <a href="HouseMusic" className={styles.card}>
+            <h3>House &rarr;</h3>
+            <div className={styles.cardContent}>
+              <img src="/house_color.svg" alt="House logo" className={styles.GenreLogo} />
+              <p>
+            La recette de la house ? de la disco, la synthpop des 80s et la hi-NRG.
+              </p>
+            </div>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+
+          <a href="rap" className={styles.card}>
+            <h3>Rap &rarr;</h3>
+            <div className={styles.cardContent}>
+              <img src="/dvd_color.svg" alt="House logo" className={styles.GenreLogo} />
+              <p>
+              La recette du rap ? t'as vraiment besoin que je te la donne?
+              </p>
+            </div>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="electroSwing" className={styles.card}>
+            <h3>Electro Swing &rarr;</h3>
+            <div className={styles.cardContent}>
+              <img src="/saxophone_color.svg" alt="electroSwing logo" className={styles.GenreLogo} />
+              <p>
+              L'électro swing ? Quand le jazz/blues et l'électro moderne ont eu un rejeton.
+              </p>
+            </div>
           </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="Various" className={styles.card}>
+            <h3>Various genres &rarr;</h3>
+            <div className={styles.cardContent}>
+              <img src="/musical_note_color.svg" alt="various logo" className={styles.GenreLogo} />
+              <p>
+                C'est un bazar ici, mais c'est pour ça qu'on aime la musique.
+              </p>
+            </div>
           </a>
         </div>
       </main>
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://swagman.fr"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          Made by{' '}
+          <img src="/swagman-SignB.svg" alt="signature" className={styles.logo} />
         </a>
       </footer>
 

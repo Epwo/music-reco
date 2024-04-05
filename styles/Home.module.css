@@ -80,8 +80,18 @@
   line-height: 1.5;
 }
 
+.cardContent {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   height: 1em;
+}
+
+.GenreLogo {
+  height: 8em;
+  margin-right: 10px;
 }
 
 @media (max-width: 600px) {
