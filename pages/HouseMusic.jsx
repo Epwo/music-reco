@@ -1,22 +1,19 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import PageStyles from '../styles/MusicPage.module.css';
 
-export default function Home() {
+export default function HouseMusic() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>House Music</title>
+        <link rel="icon" href="/ico.ico" />
       </Head>
-
+      
       <main>
-        <h1 className={styles.title}>
-          Voici ma <a href="https://www.deezer.com/fr/playlist/11208978444">Propagande</a> musicale
-        </h1>
+        <img src="/forward_icon.svg" alt="forward icon" className={PageStyles.forwardIcon} />
+        <h1 className={styles.title}>Titre</h1>
 
-        <p className={styles.description}>
-          Cliquez sur un des genres ci-dessous pour commencer
-        </p>
 
       <div className={styles.grid}>
           <a href="HouseMusic" className={styles.card}>
