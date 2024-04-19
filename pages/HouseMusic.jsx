@@ -10,15 +10,18 @@ export default function HouseMusic() {
         <link rel="icon" href="/ico.ico" />
       </Head>
       
+    <header className={PageStyles.header}>
+        <a className={PageStyles.forwardIcon} href="/">
+          <img src="/forward_icon.svg" alt="back icon" className={PageStyles.flipHorzImg} />
+        </a>
+    </header>
+    <h1 className={PageStyles.title}>Les cracks de la House</h1>
       <main>
-        <img src="/forward_icon.svg" alt="forward icon" className={PageStyles.forwardIcon} />
-        <h1 className={styles.title}>Titre</h1>
 
-
-      <div className={styles.grid}>
+      <div className={PageStyles.rect}>
           <a href="HouseMusic" className={styles.card}>
             <h3>House &rarr;</h3>
-            <div className={styles.cardContent}>
+            <div className={PageStyles.cardContent}>
               <img src="/house_color.svg" alt="House logo" className={styles.GenreLogo} />
               <p>
             La recette de la house ? de la disco, la synthpop des 80s et la hi-NRG.
